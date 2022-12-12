@@ -1,6 +1,6 @@
 {
-  "name": "@editorjs/underline",
-  "version": "1.1.0",
+  "name": "@sotaproject/strikethrough",
+  "version": "1.0.0",
   "keywords": [
     "underline",
     "tool",
@@ -8,22 +8,22 @@
     "editor.js",
     "editorjs"
   ],
-  "description": "Inline tool for underlining text fragments",
+  "description": "Inline tool for strikethrough text fragments",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/underline",
+  "repository": "https://github.com/sotaproject/strikethrough",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch"
   },
   "author": {
-    "name": "fajardm",
-    "email": "fajar.dwi.mawan@gmail.com"
+    "name": "Yan Khachko",
+    "email": "a@slnk.icu"
   },
   "bugs": {
-    "url": "https://github.com/editor-js/underline/issues"
+    "url": "https://github.com/sotaproject/strikethrough/issues"
   },
-  "homepage": "https://github.com/editor-js/underline#readme",
+  "homepage": "https://github.com/sotaproject/strikethrough#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -35,6 +35,6 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "@codexteam/icons": "^0.0.6"
+    "@codexteam/icons": "^0.0.8"
   }
 }
