@@ -3,7 +3,7 @@
 # Underline Tool
 Inline tool for underlining text fragments for the [Editor.js](https://github.com/codex-team/editor.js)
 
-![](editorjs-underline.gif)
+![](editorjs-strikethrough.gif)
 
 ## Installation
 

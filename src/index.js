@@ -1,23 +1,23 @@
 /**
  * Build styles
  */
- import './index.css';
- import { IconUnderline } from '@codexteam/icons'
+import './index.css';
+import { IconStrikethrough } from '@codexteam/icons'
 
- /**
- * Underline Tool for the Editor.js
+/**
+ * Strikethrough Tool for the Editor.js
  *
  * Allows to wrap inline fragment and style it somehow.
  */
-export default class Underline {
+export default class Strikethrough {
   /**
    * Class name for term-tag
    *
    * @type {string}
    */
   static get CSS() {
-    return 'cdx-underline';
-  };
+    return 'cdx-strikethrough';
+  }
 
   /**
    * @param {{api: object}}  - Editor.js API
@@ -37,7 +37,7 @@ export default class Underline {
      *
      * @type {string}
      */
-    this.tag = 'U';
+    this.tag = 'S';
 
     /**
      * CSS classes
@@ -81,7 +81,7 @@ export default class Underline {
       return;
     }
 
-    const termWrapper = this.api.selection.findParentTag(this.tag, Underline.CSS);
+    const termWrapper = this.api.selection.findParentTag(this.tag, Strikethrough.CSS);
 
     /**
      * If start or end of selection is in the highlighted block
@@ -102,9 +102,9 @@ export default class Underline {
     /**
      * Create a wrapper for highlighting
      */
-    const u = document.createElement(this.tag);
+    const s = document.createElement(this.tag);
 
-    u.classList.add(Underline.CSS);
+    s.classList.add(Strikethrough.CSS);
 
     /**
      * SurroundContent throws an error if the Range splits a non-Text node with only one of its boundary points
@@ -113,13 +113,13 @@ export default class Underline {
      *
      * // range.surroundContents(span);
      */
-    u.appendChild(range.extractContents());
-    range.insertNode(u);
+    s.appendChild(range.extractContents());
+    range.insertNode(s);
 
     /**
      * Expand (add) selection to highlighted block
      */
-    this.api.selection.expandToTag(u);
+    this.api.selection.expandToTag(s);
   }
 
   /**
@@ -159,7 +159,7 @@ export default class Underline {
    * Check and change Term's state for current selection
    */
   checkState() {
-    const termTag = this.api.selection.findParentTag(this.tag, Underline.CSS);
+    const termTag = this.api.selection.findParentTag(this.tag, Strikethrough.CSS);
 
     this.button.classList.toggle(this.iconClasses.active, !!termTag);
   }
@@ -170,7 +170,7 @@ export default class Underline {
    * @returns {string}
    */
   get toolboxIcon() {
-    return IconUnderline;
+    return IconStrikethrough;
   }
 
   /**
@@ -180,8 +180,8 @@ export default class Underline {
    */
   static get sanitize() {
     return {
-      u: {
-        class: Underline.CSS,
+      s: {
+        class: Strikethrough.CSS,
       },
     };
   }
