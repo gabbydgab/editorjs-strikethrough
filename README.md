@@ -64,7 +64,7 @@ This Tool has no config params
 
 ## Output data
 
-Underlined text will be wrapped with a `s` tag with an `cdx-strikethrough` class.
+Strikethrough text will be wrapped with a `s` tag with an `cdx-strikethrough` class.
 
 ```json
 {
