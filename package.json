@@ -1,6 +1,6 @@
 {
   "name": "@gabbydgab/editorjs-strikethrough",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "strikethrough",
     "tool",
@@ -8,6 +8,7 @@
     "editor.js",
     "editorjs"
   ],
+  "type": "module",
   "description": "Inline tool for strikethrough text fragments",
   "license": "MIT",
   "repository": "https://github.com/gabbydgab/editorjs-strikethrough",
