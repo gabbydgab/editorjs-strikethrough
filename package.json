@@ -1,6 +1,6 @@
 {
-  "name": "@sotaproject/strikethrough",
-  "version": "1.0.1",
+  "name": "@gabbydgab/editorjs-strikethrough",
+  "version": "1.0.0",
   "keywords": [
     "strikethrough",
     "tool",
@@ -10,29 +10,29 @@
   ],
   "description": "Inline tool for strikethrough text fragments",
   "license": "MIT",
-  "repository": "https://github.com/sotaproject/strikethrough",
+  "repository": "https://github.com/gabbydgab/editorjs-strikethrough",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch"
   },
   "author": {
-    "name": "Yan Khachko",
-    "email": "a@slnk.icu"
+    "name": "Gabriel A.",
+    "email": "webmaster.gabamba@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/sotaproject/strikethrough/issues"
+    "url": "https://github.com/gabbydgab/editorjs-strikethrough/issues"
   },
-  "homepage": "https://github.com/sotaproject/strikethrough#readme",
+  "homepage": "https://github.com/gabbydgab/editorjs-strikethrough#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.5.3",
+    "css-loader": "^7.1.2",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "@codexteam/icons": "^0.0.8"
